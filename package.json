@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/child_process",
-	"version": "2.1.0",
+	"version": "2.2.0",
 	"description": "ctx-core child_process extensions",
 	"main": "lib.js",
 	"module": "lib.js",
