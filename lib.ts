@@ -1,12 +1,12 @@
-import { ChildProcess } from 'child_process'
-export type Receive__child_process = (cmd:ChildProcess)=>void
-export function pipe__stdout_and_stderr(cmd:ChildProcess) {
-	cmd.stdout.pipe(process.stdout)
-	cmd.stderr.pipe(process.stderr)
+import { ChildProcessWithoutNullStreams } from 'child_process'
+export type Receive__child_process = (child_process:ChildProcessWithoutNullStreams)=>void
+export function pipe__stdout_and_stderr(child_process:ChildProcessWithoutNullStreams) {
+	child_process.stdout.pipe(process.stdout)
+	child_process.stderr.pipe(process.stderr)
 }
-export type Pipe__child_process = (child_process:ChildProcess, pipe?: Receive__child_process) => Promise<number>
+export type Pipe__child_process = (child_process:ChildProcessWithoutNullStreams, pipe?: Receive__child_process) => Promise<number>
 export function _pipe__child_process(pipe:Receive__child_process = pipe__stdout_and_stderr) {
-	return function pipe__child_process(child_process:ChildProcess, pipe__override = pipe) {
+	return function pipe__child_process(child_process:ChildProcessWithoutNullStreams, pipe__override = pipe) {
 		pipe__override(child_process)
 		return new Promise((resolve, reject)=>{
 			child_process.on('close', code=>{
