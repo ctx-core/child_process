@@ -1,0 +1,35 @@
+{
+	"name": "@ctx-core/child_process",
+	"version": "0.0.0",
+	"description": "ctx-core child_process extensions",
+	"main": "lib.js",
+	"module": "lib.js",
+	"types": "lib.ts",
+	"scripts": {
+		"build": "npm run clean && npm run compile",
+		"clean": "rm -f tsconfig.tsbuildinfo",
+		"compile": "tsc -b",
+		"prepublishOnly": "npm run compile"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ctx-core/chain.git"
+	},
+	"keywords": [
+		"ctx-core",
+		"chain"
+	],
+	"author": "Brian Takita",
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/ctx-core/chain/issues"
+	},
+	"homepage": "https://github.com/ctx-core/chain#readme",
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"typescript": "^3.8.3"
+	},
+	"gitHead": "ecded533c5d9946e2d9dafa39dbc95ce3e38ad93"
+}
