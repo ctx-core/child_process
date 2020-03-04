@@ -4,9 +4,9 @@ export function pipe__stdout_and_stderr(cmd) {
 	cmd.stderr.pipe(process.stderr)
 }
 export function _spawn__pipe(pipe = pipe__stdout_and_stderr) {
-	return function (cmd_name, argv) {
+	return function spawn__pipe(cmd_name, argv, pipe__override = pipe) {
 		const cmd = spawn(cmd_name, argv)
-		pipe(cmd)
+		pipe__override(cmd)
 		return new Promise((resolve, reject)=>{
 			cmd.on('close', code=>{
 				if (code) {
