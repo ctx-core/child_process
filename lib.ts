@@ -4,8 +4,8 @@ export function pipe__stdout_and_stderr(cmd:ChildProcessWithoutNullStreams) {
 	cmd.stdout.pipe(process.stdout)
 	cmd.stderr.pipe(process.stderr)
 }
-export function _spawn__pipe(pipe:Pipe = pipe__stdout_and_stderr) {
-	return function spawn__pipe(cmd_name, argv, pipe__override:Pipe = pipe) {
+export function _spawn__pipe(pipe:Pipe = pipe__stdout_and_stderr):(cmd_name:string, argv:string[], pipe__override?:Pipe) => Promise<number> {
+	return function spawn__pipe(cmd_name, argv, pipe__override = pipe) {
 		const cmd:ChildProcessWithoutNullStreams = spawn(cmd_name, argv)
 		pipe__override(cmd)
 		return new Promise((resolve, reject)=>{
