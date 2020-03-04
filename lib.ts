@@ -1,16 +1,15 @@
-import { ChildProcessWithoutNullStreams, spawn } from 'child_process'
-export type Pipe = (cmd:ChildProcessWithoutNullStreams)=>void
-export function pipe__stdout_and_stderr(cmd:ChildProcessWithoutNullStreams) {
+import { ChildProcess } from 'child_process'
+export type Receive__child_process = (cmd:ChildProcess)=>void
+export function pipe__stdout_and_stderr(cmd:ChildProcess) {
 	cmd.stdout.pipe(process.stdout)
 	cmd.stderr.pipe(process.stderr)
 }
-export type Spawn__pipe = (cmd_name:string, argv:string[], pipe__override?:Pipe) => Promise<number>
-export function _spawn__pipe(pipe:Pipe = pipe__stdout_and_stderr):Spawn__pipe {
-	return function spawn__pipe(cmd_name, argv, pipe__override = pipe) {
-		const cmd:ChildProcessWithoutNullStreams = spawn(cmd_name, argv)
-		pipe__override(cmd)
+export type Pipe__child_process = (child_process:ChildProcess, pipe?: Receive__child_process) => Promise<number>
+export function _pipe__child_process(pipe:Receive__child_process = pipe__stdout_and_stderr) {
+	return function pipe__child_process(child_process:ChildProcess, pipe__override = pipe) {
+		pipe__override(child_process)
 		return new Promise((resolve, reject)=>{
-			cmd.on('close', code=>{
+			child_process.on('close', code=>{
 				if (code) {
 					reject(code)
 				} else {
@@ -18,7 +17,6 @@ export function _spawn__pipe(pipe:Pipe = pipe__stdout_and_stderr):Spawn__pipe {
 				}
 			})
 		})
-	}
+	} as Pipe__child_process
 }
-export const spawn__pipe:Spawn__pipe = _spawn__pipe()
-export const _cmd__spawn = spawn__pipe
+export const pipe__child_process = _pipe__child_process()
