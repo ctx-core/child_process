@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/child_process",
-	"version": "2.2.9",
+	"version": "2.2.10",
 	"description": "ctx-core child_process extensions",
 	"main": "./index.js",
 	"module": "./index.js",
