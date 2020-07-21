@@ -32,7 +32,7 @@
 		"memory-streams": "^0.1.3"
 	},
 	"devDependencies": {
-		"typescript": "^3.9.6"
+		"typescript": "^3.9.7"
 	},
 	"gitHead": "308693444b0c2f6b40d4a610c970bd849eb856d3"
 }
