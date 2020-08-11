@@ -1,13 +1,17 @@
 import { ChildProcess } from 'child_process'
 import { WritableStream } from 'memory-streams'
+import { Writable } from 'stream'
 import { pipe_child_process } from './pipe_child_process'
-export async function capture_child_process(child_process:ChildProcess) {
-	const stdout = new WritableStream()
-	const stderr = new WritableStream()
+
+export async function capture_child_process(
+	child_process: ChildProcess, opts: capture_child_process_opts_type = {}
+) {
+	const stdout = opts.stdout || new WritableStream()
+	const stderr = opts.stdin || new WritableStream()
 	try {
 		await pipe_child_process(
 			child_process,
-			child_process=>{
+			child_process => {
 				child_process.stdout?.pipe(stdout)
 				child_process.stderr?.pipe(stderr)
 			})
@@ -16,4 +20,9 @@ export async function capture_child_process(child_process:ChildProcess) {
 	}
 	return stdout.toString().trim()
 }
+
 export const capture__child_process = capture_child_process
+export type capture_child_process_opts_type = {
+	stdin?: Writable
+	stdout?: Writable
+}
