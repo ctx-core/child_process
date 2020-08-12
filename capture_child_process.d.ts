@@ -1,9 +1,10 @@
 /// <reference types="node" />
 import { ChildProcess } from 'child_process';
-export declare type Receive__child_process = (child_process: ChildProcess) => void;
-export declare function pipe__stdout_and_stderr(child_process: ChildProcess): void;
-export declare type Pipe__child_process = (child_process: ChildProcess, pipe?: Receive__child_process) => Promise<number>;
-export declare function _pipe__child_process(pipe?: Receive__child_process): Pipe__child_process;
-export declare const pipe__child_process: Pipe__child_process;
-export declare function receive__child_process(fn: Receive__child_process): Receive__child_process;
-export declare function capture__child_process(child_process: ChildProcess): Promise<string>;
+import { Writable } from 'stream';
+export declare function capture_child_process(child_process: ChildProcess, opts?: capture_child_process_opts_type): Promise<string>;
+export declare const capture: typeof capture_child_process;
+export declare const capture__child_process: typeof capture_child_process;
+export declare type capture_child_process_opts_type = {
+    stdin?: Writable;
+    stdout?: Writable;
+};
