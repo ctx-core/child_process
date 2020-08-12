@@ -6,11 +6,11 @@ export type pipe_child_process_type =
 export function _pipe_child_process(
 	pipe:receive_child_process_type = pipe_stdout_and_stderr
 ) {
-	return function pipe__child_process(
+	return function pipe_child_process(
 		child_process:ChildProcess,
-		pipe__override:receive_child_process_type = pipe
+		override_pipe:receive_child_process_type = pipe
 	) {
-		pipe__override(child_process)
+		override_pipe(child_process)
 		return new Promise((resolve, reject)=>{
 			child_process.on('close', code=>{
 				if (code) {
