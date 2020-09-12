@@ -1,6 +1,6 @@
-import { ChildProcess } from 'child_process'
+import type { ChildProcess } from 'child_process'
 import { WritableStream } from 'memory-streams'
-import { Writable } from 'stream'
+import type { Writable } from 'stream'
 import { pipe_child_process } from './pipe_child_process'
 export async function capture_child_process(
 	child_process: ChildProcess, opts: capture_child_process_opts_type = {}

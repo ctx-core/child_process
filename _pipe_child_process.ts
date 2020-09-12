@@ -1,8 +1,6 @@
-import { ChildProcess } from 'child_process'
-import { receive_child_process_type } from './receive_child_process'
+import type { ChildProcess } from 'child_process'
+import type { receive_child_process_type } from './receive_child_process'
 import { pipe_stdout_and_stderr } from './pipe_stdout_and_stderr'
-export type pipe_child_process_type =
-	(child_process:ChildProcess, pipe?:receive_child_process_type)=>Promise<number>
 export function _pipe_child_process(
 	pipe:receive_child_process_type = pipe_stdout_and_stderr
 ) {
@@ -23,3 +21,5 @@ export function _pipe_child_process(
 	} as pipe_child_process_type
 }
 export const _pipe__child_process = _pipe_child_process
+export type pipe_child_process_type =
+	(child_process:ChildProcess, pipe?:receive_child_process_type)=>Promise<number>
