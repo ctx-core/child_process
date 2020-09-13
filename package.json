@@ -2,6 +2,20 @@
 	"name": "@ctx-core/child_process",
 	"version": "2.4.7",
 	"description": "ctx-core child_process extensions",
+	"keywords": [
+		"ctx-core",
+		"chain"
+	],
+	"homepage": "https://github.com/ctx-core/chain#readme",
+	"bugs": {
+		"url": "https://github.com/ctx-core/chain/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ctx-core/chain.git"
+	},
+	"license": "Apache-2.0",
+	"author": "Brian Takita",
 	"main": "./index.js",
 	"module": "./index.js",
 	"types": "./index.ts",
@@ -9,31 +23,17 @@
 		"build": "npm run clean && npm run compile",
 		"clean": "rm -f tsconfig.tsbuildinfo",
 		"compile": "tsc -b",
-		"prepublishOnly": "npm run compile",
-		"exec": "$@"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ctx-core/chain.git"
-	},
-	"keywords": [
-		"ctx-core",
-		"chain"
-	],
-	"author": "Brian Takita",
-	"license": "Apache-2.0",
-	"bugs": {
-		"url": "https://github.com/ctx-core/chain/issues"
-	},
-	"homepage": "https://github.com/ctx-core/chain#readme",
-	"publishConfig": {
-		"access": "public"
+		"exec": "$@",
+		"prepublishOnly": "npm run compile"
 	},
 	"dependencies": {
 		"memory-streams": "^0.1.3"
 	},
 	"devDependencies": {
 		"typescript": "^4.0.2"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"gitHead": "eec697a45775d8d67bbee43a6ca5fee94c2d50e3"
 }
