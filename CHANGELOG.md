@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 3.0.2
+
+### Patch Changes
+
+- version bump to sync with npm
+
 ## 3.0.1
 
 ### Patch Changes
