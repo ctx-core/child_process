@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 3.0.3
+
+### Patch Changes
+
+- typescript: ^4.0.3 -> ^4.0.5
+
 ## 3.0.2
 
 ### Patch Changes
