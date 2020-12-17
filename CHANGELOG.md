@@ -1,5 +1,12 @@
 # @ctx-core/child_process
 
+## 3.0.6
+
+### Patch Changes
+
+- using export as instead of export const
+- interface instead of type: capture_child_process_opts_type
+
 ## 3.0.5
 
 ### Patch Changes
