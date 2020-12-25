@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 3.0.7
+
+### Patch Changes
+
+- - .rush
+
 ## 3.0.6
 
 ### Patch Changes
