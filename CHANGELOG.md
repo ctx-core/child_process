@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 4.1.0
+
+### Minor Changes
+
+- "noImplicitAny": true
+
 ## 4.0.10
 
 ### Patch Changes
