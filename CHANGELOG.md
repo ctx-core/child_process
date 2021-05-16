@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 4.1.2
+
+### Patch Changes
+
+- .npmignore: + ~
+
 ## 4.1.1
 
 ### Patch Changes
