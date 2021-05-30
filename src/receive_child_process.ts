@@ -1,6 +1,6 @@
 import type { ChildProcess } from 'child_process'
-export type receive_child_process_type = (child_process:ChildProcess)=>void
-export function receive_child_process(fn:receive_child_process_type) {
+export type receive_child_process_T = (child_process:ChildProcess)=>void
+export function receive_child_process(fn:receive_child_process_T) {
 	return fn
 }
 export {
