@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 5.0.1
+
+### Patch Changes
+
+- fix: build: clean up old build files in dist
+
 ## 5.0.0
 
 ### Major Changes
