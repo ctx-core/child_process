@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 6.0.0
+
+### Major Changes
+
+- move from dist to src directory
+
 ## 5.0.2
 
 ### Patch Changes
