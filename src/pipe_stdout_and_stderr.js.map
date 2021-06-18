@@ -1,1 +1,0 @@
-{"version":3,"file":"pipe_stdout_and_stderr.js","sourceRoot":"","sources":["../pipe_stdout_and_stderr.ts"],"names":[],"mappings":"AACA,MAAM,UAAU,sBAAsB,CAAC,aAA0B;;IAChE,MAAA,aAAa,CAAC,MAAM,0CAAE,IAAI,CAAC,OAAO,CAAC,MAAM,CAAC,CAAA;IAC1C,MAAA,aAAa,CAAC,MAAM,0CAAE,IAAI,CAAC,OAAO,CAAC,MAAM,CAAC,CAAA;AAC3C,CAAC;AACD,OAAO,EACN,sBAAsB,IAAI,uBAAuB,EACjD,CAAA"}
