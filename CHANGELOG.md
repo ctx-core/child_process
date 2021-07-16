@@ -1,5 +1,17 @@
 # @ctx-core/child_process
 
+## 7.0.11
+
+### Patch Changes
+
+- fix: sourceMappingURL: "mapRoot": ""
+
+## 7.0.10
+
+### Patch Changes
+
+- tsconfig.json: "target": "es2019"
+
 ## 7.0.9
 
 ### Patch Changes
