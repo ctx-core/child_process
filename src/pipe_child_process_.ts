@@ -1,6 +1,6 @@
 import type { ChildProcess } from 'child_process'
-import type { receive_child_process_T } from './receive_child_process.js'
 import { pipe_stdout_and_stderr } from './pipe_stdout_and_stderr.js'
+import type { receive_child_process_T } from './receive_child_process.js'
 export function pipe_child_process_(
 	pipe:receive_child_process_T = pipe_stdout_and_stderr
 ) {

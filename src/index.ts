@@ -1,5 +1,5 @@
-export * from './pipe_child_process_.js'
 export * from './capture_child_process.js'
 export * from './pipe_child_process.js'
+export * from './pipe_child_process_.js'
 export * from './pipe_stdout_and_stderr.js'
 export * from './receive_child_process.js'
