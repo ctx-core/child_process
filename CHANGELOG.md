@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 7.0.26
+
+### Patch Changes
+
+- package.json: - module
+
 ## 7.0.25
 
 ### Patch Changes
