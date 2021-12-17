@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 7.0.33
+
+### Patch Changes
+
+- tsconfig.json: "target": "ES2021"
+
 ## 7.0.32
 
 ### Patch Changes
