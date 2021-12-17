@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 7.0.32
+
+### Patch Changes
+
+- package.json: "types": "./src/index.ts": better editing experience
+
 ## 7.0.31
 
 ### Patch Changes
