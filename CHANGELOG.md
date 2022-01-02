@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 7.0.35
+
+### Patch Changes
+
+- .js + .d.ts instead of .ts
+
 ## 7.0.34
 
 ### Patch Changes
