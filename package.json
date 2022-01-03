@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/child_process",
-	"version": "7.0.35",
+	"version": "7.0.36",
 	"description": "ctx-core child_process extensions",
 	"keywords": [
 		"ctx-core",
