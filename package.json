@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/child_process",
-	"version": "7.0.37",
+	"version": "7.0.38",
 	"description": "ctx-core child_process extensions",
 	"keywords": [
 		"ctx-core",
@@ -47,5 +47,6 @@
 		"access": "public",
 		"cache": "~/.npm"
 	},
-	"svelte": "./lib/index.js"
+	"svelte": "./lib/index.js",
+	"sideEffects": false
 }
