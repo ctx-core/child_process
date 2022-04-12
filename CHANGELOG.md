@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 7.0.39
+
+### Patch Changes
+
+- package.json: exports: update
+
 ## 7.0.38
 
 ### Patch Changes
