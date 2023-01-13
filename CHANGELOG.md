@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 7.0.41
+
+### Patch Changes
+
+- rimraf: ^4.0.1 -> ^4.0.4
+
 ## 7.0.40
 
 ### Patch Changes
