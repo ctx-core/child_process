@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 7.0.42
+
+### Patch Changes
+
+- tsconfig.json: - importsNotUsedAsValues
+
 ## 7.0.41
 
 ### Patch Changes
