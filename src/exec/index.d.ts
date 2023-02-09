@@ -1,6 +1,2 @@
-import type { ChildProcessWithoutNullStreams, SpawnOptions } from 'child_process'
-export function exec(
-	command:string,
-	args:ReadonlyArray<string>,
-	argv__options?:SpawnOptions,
-):Promise<ChildProcessWithoutNullStreams>
+import child_process from 'child_process'
+export declare const exec:typeof child_process.exec.__promisify__

@@ -1,5 +1,12 @@
 # @ctx-core/child_process
 
+## 7.2.0
+
+### Minor Changes
+
+- exec=>spawn_pipe_process
+- exec: export const exec = promisify(\_exec)
+
 ## 7.1.1
 
 ### Patch Changes
