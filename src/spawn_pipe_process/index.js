@@ -20,10 +20,9 @@ export async function spawn_pipe_process(
 		const proc = spawn(command, args, options).on(
 			'exit', code=>{
 				if (code) process.exit(code)
-				ret(code)
+				ret(proc)
 			})
 		proc.stdout.pipe(process.stdout)
 		proc.stderr.pipe(process.stderr)
-		ret(proc)
 	})
 }

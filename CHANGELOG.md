@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 7.2.2
+
+### Patch Changes
+
+- spawn_pipe_process: fix: wait for process to complete before returned Promise returns
+
 ## 7.2.1
 
 ### Patch Changes
