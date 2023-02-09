@@ -1,5 +1,12 @@
 # @ctx-core/child_process
 
+## 7.1.0
+
+### Minor Changes
+
+- extract _.js & _.d.ts into directories
+- - exec function
+
 ## 7.0.43
 
 ### Patch Changes
