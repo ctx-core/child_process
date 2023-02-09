@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 7.2.1
+
+### Patch Changes
+
+- version bump
+
 ## 7.2.0
 
 ### Minor Changes
