@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 7.1.1
+
+### Patch Changes
+
+- tsconfig.json: skipLibCheck: true
+
 ## 7.1.0
 
 ### Minor Changes
