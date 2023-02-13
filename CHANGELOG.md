@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 7.2.3
+
+### Patch Changes
+
+- spawn_pipe_process: stdio: 'inherit'
+
 ## 7.2.2
 
 ### Patch Changes

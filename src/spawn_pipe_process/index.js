@@ -1,3 +1,4 @@
+import { clone } from '@ctx-core/object'
 import { spawn } from 'child_process'
 import { resolve } from 'path'
 /**
@@ -17,12 +18,10 @@ export async function spawn_pipe_process(
 		shell: true
 	}, argv__options)
 	return new Promise(ret=>{
-		const proc = spawn(command, args, options).on(
+		const proc = spawn(command, args, clone(options, { stdio: 'inherit' })).on(
 			'exit', code=>{
 				if (code) process.exit(code)
 				ret(proc)
 			})
-		proc.stdout.pipe(process.stdout)
-		proc.stderr.pipe(process.stderr)
 	})
 }
