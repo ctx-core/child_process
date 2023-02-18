@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 7.2.4
+
+### Patch Changes
+
+- 15f224d0f: @ctx-core/object: workspace:^24.1.4 -> 24.1.5
+
 ## 7.2.3
 
 ### Patch Changes
