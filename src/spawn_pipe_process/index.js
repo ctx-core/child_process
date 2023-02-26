@@ -1,6 +1,7 @@
 import { clone } from '@ctx-core/object'
 import { spawn } from 'child_process'
 import { resolve } from 'path'
+import { import_meta_env_ } from '@ctx-core/env'
 /**
  * @param command{string}
  * @param args{ReadonlyArray<string>}
@@ -14,7 +15,7 @@ export async function spawn_pipe_process(
 ) {
 	const options = Object.assign({
 		cwd: resolve('.'),
-		env: process.env,
+		env: import_meta_env_(),
 		shell: true
 	}, argv__options)
 	return new Promise(ret=>{

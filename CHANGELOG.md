@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 7.2.14
+
+### Patch Changes
+
+- import*meta_env*() instead of process.env
+
 ## 7.2.13
 
 ### Patch Changes
