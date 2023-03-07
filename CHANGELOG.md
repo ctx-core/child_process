@@ -1,5 +1,13 @@
 # @ctx-core/child_process
 
+## 7.2.32
+
+### Patch Changes
+
+- Updated dependencies
+  - @ctx-core/env@17.2.32
+  - @ctx-core/object@27.1.6
+
 ## 7.2.31
 
 ### Patch Changes
