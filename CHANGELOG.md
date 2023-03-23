@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 7.2.42
+
+### Patch Changes
+
+- @ctx-core/env: ^17.2.40 -> ^17.2.41
+
 ## 7.2.41
 
 ### Patch Changes
