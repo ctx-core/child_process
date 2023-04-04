@@ -1,16 +1,18 @@
+import { import_meta_env_ } from '@ctx-core/env'
 import { clone } from '@ctx-core/object'
 import { spawn } from 'child_process'
 import { resolve } from 'path'
-import { import_meta_env_ } from '@ctx-core/env'
+/** @typedef {import('child_process').ChildProcessWithoutNullStreams}ChildProcessWithoutNullStreams */
+/** @typedef {import('child_process').SpawnOptions}SpawnOptions */
 /**
- * @param command{string}
- * @param args{ReadonlyArray<string>}
- * @param argv__options{import('child_process').SpawnOptions}
- * @return {Promise<import('child_process').ChildProcessWithoutNullStreams>}
+ * @param {string}command
+ * @param {ReadonlyArray<string>}arg_a
+ * @param {SpawnOptions}[argv__options]
+ * @return {Promise<ChildProcessWithoutNullStreams>}
  */
 export async function spawn_pipe_process(
 	command,
-	args,
+	arg_a,
 	argv__options = {}
 ) {
 	const options = Object.assign({
@@ -19,10 +21,11 @@ export async function spawn_pipe_process(
 		shell: true
 	}, argv__options)
 	return new Promise(ret=>{
-		const proc = spawn(command, args, clone(options, { stdio: 'inherit' })).on(
-			'exit', code=>{
-				if (code) process.exit(code)
-				ret(proc)
-			})
+		const proc =
+			spawn(command, arg_a, clone(options, { stdio: 'inherit' }))
+				.on('exit', code=>{
+					if (code) process.exit(code)
+					ret(proc)
+				})
 	})
 }

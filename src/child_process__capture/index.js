@@ -1,10 +1,20 @@
 import { WritableStream } from 'memory-streams'
 import { child_process__pipe } from '../child_process__pipe/index.js'
-export async function child_process__capture(child_process, opts = {}) {
-	const stdout = opts.stdout || new WritableStream()
-	const stderr = opts.stderr || new WritableStream()
+/** @typedef {import('child_process').ChildProcess}ChildProcess */
+/** @typedef {import('./index.d.ts').child_process__capture__params_T}child_process__capture__params_T */
+/**
+ * @param {ChildProcess}child_process
+ * @param {child_process__capture__params_T}[params]
+ * @returns {Promise<string>}
+ */
+export async function child_process__capture(
+	child_process,
+	params = {}
+) {
+	const stdout = params.stdout || new WritableStream()
+	const stderr = params.stderr || new WritableStream()
 	try {
-		await child_process__pipe(child_process, (child_process)=>{
+		await child_process__pipe(child_process, child_process=>{
 			child_process.stdout?.pipe(stdout)
 			child_process.stderr?.pipe(stderr)
 		})

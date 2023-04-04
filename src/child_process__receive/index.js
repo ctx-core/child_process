@@ -1,3 +1,8 @@
+/** @typedef {import('./index.d.ts').child_process__receive_T}child_process__receive_T */
+/**
+ * @param {child_process__receive_T}fn
+ * @returns {child_process__receive_T}
+ */
 export function child_process__receive(fn) {
 	return fn
 }

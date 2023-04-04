@@ -1,5 +1,12 @@
 # @ctx-core/child_process
 
+## 7.3.0
+
+### Minor Changes
+
+- - child_process**capture**params_T: aliased by child_process\_\_capture_opts_type
+- - jsdoc
+
 ## 7.2.56
 
 ### Patch Changes
