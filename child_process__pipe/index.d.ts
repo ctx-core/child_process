@@ -1,4 +1,4 @@
-import { child_process__pipe_T } from '../child_process__pipe_'
+import { child_process__pipe_T } from '../child_process__pipe_/index.js'
 export declare const child_process__pipe:child_process__pipe_T
 export {
 	child_process__pipe as pipe_child_process,

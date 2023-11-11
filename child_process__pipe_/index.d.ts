@@ -1,6 +1,6 @@
 /// <reference types="node" />
 import type { ChildProcess } from 'child_process'
-import type { child_process__receive_T } from '../child_process__receive'
+import type { child_process__receive_T } from '../child_process__receive/index.js'
 export declare function child_process__pipe_(
 	pipe?:child_process__receive_T
 ):child_process__pipe_T
