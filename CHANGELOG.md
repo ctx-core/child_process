@@ -1,5 +1,14 @@
 # @ctx-core/child_process
 
+## 7.4.3
+
+### Patch Changes
+
+- fix: missing tsconfig.json
+- Updated dependencies
+  - @ctx-core/env@17.4.2
+  - @ctx-core/object@30.1.2
+
 ## 7.4.2
 
 ### Patch Changes
