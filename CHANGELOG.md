@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 7.4.1
+
+### Patch Changes
+
+- child_process\_\_pipe: fix: import
+
 ## 7.4.0
 
 ### Minor Changes
