@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/child_process",
-	"version": "7.4.3",
+	"version": "7.4.4",
 	"description": "ctx-core child_process extensions",
 	"keywords": [
 		"ctx-core",
@@ -19,6 +19,7 @@
 	"type": "module",
 	"files": [
 		"*.d.ts",
+		"*.js",
 		"*.json",
 		"./child_process__capture",
 		"./child_process__pipe",
@@ -43,8 +44,8 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/env": "^17.4.2",
-		"@ctx-core/object": "^30.1.2",
+		"@ctx-core/env": "^17.4.3",
+		"@ctx-core/object": "^30.1.3",
 		"memory-streams": "^0.1.3"
 	},
 	"devDependencies": {

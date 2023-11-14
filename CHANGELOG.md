@@ -1,5 +1,14 @@
 # @ctx-core/child_process
 
+## 7.4.4
+
+### Patch Changes
+
+- package.json: files: + \*.js
+- Updated dependencies
+  - @ctx-core/env@17.4.3
+  - @ctx-core/object@30.1.3
+
 ## 7.4.3
 
 ### Patch Changes
