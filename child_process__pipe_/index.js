@@ -1,6 +1,6 @@
 import { stdout_stderr__pipe } from '../stdout_stderr__pipe/index.js'
-/** @typedef {import('../child_process__receive/index.d.ts').child_process__receive_T}child_process__receive_T */
-/** @typedef {import('./index.d.ts').child_process__pipe_T}child_process__pipe_T */
+/** @typedef {import('../child_process__receive/index.d.ts').child_process__receive_T} */
+/** @typedef {import('./index.d.ts').child_process__pipe_T} */
 /**
  * @param {child_process__receive_T}[pipe]
  * @returns {child_process__pipe_T}

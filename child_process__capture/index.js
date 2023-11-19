@@ -1,7 +1,7 @@
 import { WritableStream } from 'memory-streams'
 import { child_process__pipe } from '../child_process__pipe/index.js'
-/** @typedef {import('child_process').ChildProcess}ChildProcess */
-/** @typedef {import('./index.d.ts').child_process__capture__params_T}child_process__capture__params_T */
+/** @typedef {import('child_process').ChildProcess} */
+/** @typedef {import('./index.d.ts').child_process__capture__params_T} */
 /**
  * @param {ChildProcess}child_process
  * @param {child_process__capture__params_T}[params]

@@ -2,8 +2,8 @@ import { import_meta_env_ } from '@ctx-core/env'
 import { clone } from '@ctx-core/object'
 import { spawn } from 'child_process'
 import { resolve } from 'path'
-/** @typedef {import('child_process').ChildProcessWithoutNullStreams}ChildProcessWithoutNullStreams */
-/** @typedef {import('child_process').SpawnOptions}SpawnOptions */
+/** @typedef {import('child_process').ChildProcessWithoutNullStreams} */
+/** @typedef {import('child_process').SpawnOptions} */
 /**
  * @param {string}command
  * @param {ReadonlyArray<string>}arg_a
