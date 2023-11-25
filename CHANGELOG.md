@@ -1,5 +1,15 @@
 # @ctx-core/child_process
 
+## 7.4.29
+
+### Patch Changes
+
+- tsx: ^4.4.0 -> ^4.5.0
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/env@17.4.29
+  - @ctx-core/object@31.1.7
+
 ## 7.4.28
 
 ### Patch Changes
