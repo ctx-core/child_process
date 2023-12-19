@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 7.4.61
+
+### Patch Changes
+
+- consolidate dependencies
+
 ## 7.4.60
 
 ### Patch Changes

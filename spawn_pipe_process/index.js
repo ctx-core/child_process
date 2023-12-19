@@ -1,5 +1,4 @@
 import { import_meta_env_ } from '@ctx-core/env'
-import { clone } from '@ctx-core/object'
 import { spawn } from 'child_process'
 import { resolve } from 'path'
 /** @typedef {import('child_process').ChildProcessWithoutNullStreams} */
@@ -22,7 +21,7 @@ export async function spawn_pipe_process(
 	}, argv__options)
 	return new Promise(ret=>{
 		const proc =
-			spawn(command, arg_a, clone(options, { stdio: 'inherit' }))
+			spawn(command, arg_a, { ...options, stdio: 'inherit' })
 				.on('exit', code=>{
 					if (code) process.exit(code)
 					ret(proc)
