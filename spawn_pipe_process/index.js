@@ -1,5 +1,5 @@
-import { import_meta_env_ } from '@ctx-core/env'
 import { spawn } from 'child_process'
+import { import_meta_env_ } from 'ctx-core/env'
 import { resolve } from 'path'
 /** @typedef {import('child_process').ChildProcessWithoutNullStreams} */
 /** @typedef {import('child_process').SpawnOptions} */
