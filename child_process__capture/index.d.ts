@@ -1,4 +1,4 @@
-import type { ChildProcess } from 'child_process'
+import type { ChildProcess } from 'node:child_process'
 import type { Writable } from 'stream'
 export declare function child_process__capture(
 	child_process:ChildProcess,

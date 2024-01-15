@@ -1,4 +1,4 @@
-/** @typedef {import('child_process').ChildProcess} */
+/** @typedef {import('node:child_process').ChildProcess} */
 /**
  * @param {ChildProcess}child_process
  */

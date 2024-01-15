@@ -1,4 +1,4 @@
-import type { ChildProcess } from 'child_process'
+import type { ChildProcess } from 'node:child_process'
 export declare function child_process__receive(
 	fn:child_process__receive_T
 ):child_process__receive_T

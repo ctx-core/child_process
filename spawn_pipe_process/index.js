@@ -1,8 +1,8 @@
-import { spawn } from 'child_process'
+import { spawn } from 'node:child_process'
 import { import_meta_env_ } from 'ctx-core/env'
-import { resolve } from 'path'
-/** @typedef {import('child_process').ChildProcessWithoutNullStreams} */
-/** @typedef {import('child_process').SpawnOptions} */
+import { resolve } from 'node:path'
+/** @typedef {import('node:child_process').ChildProcessWithoutNullStreams} */
+/** @typedef {import('node:child_process').SpawnOptions} */
 /**
  * @param {string}command
  * @param {ReadonlyArray<string>}arg_a
