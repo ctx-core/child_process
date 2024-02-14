@@ -1,5 +1,13 @@
 # @ctx-core/child_process
 
+## 7.4.142
+
+### Patch Changes
+
+- ctx-core: ^6.2.1 -> ^6.2.2
+- Updated dependencies
+  - ctx-core@6.2.3
+
 ## 7.4.141
 
 ### Patch Changes
