@@ -1,5 +1,13 @@
 # @ctx-core/child_process
 
+## 7.4.162
+
+### Patch Changes
+
+- package.json: author: url,email
+- Updated dependencies
+  - ctx-core@6.6.1
+
 ## 7.4.161
 
 ### Patch Changes
