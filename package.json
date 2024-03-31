@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/child_process",
-	"version": "7.4.167",
+	"version": "7.4.168",
 	"description": "ctx-core child_process extensions",
 	"keywords": [
 		"ctx-core",
@@ -49,7 +49,7 @@
 		"disable:test:unit:coverage": "c8 pnpm test:unit"
 	},
 	"dependencies": {
-		"ctx-core": "^6.8.1",
+		"ctx-core": "^6.8.2",
 		"memory-streams": "^0.1.3"
 	},
 	"devDependencies": {
