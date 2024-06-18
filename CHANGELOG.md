@@ -1,5 +1,11 @@
 # @ctx-core/child_process
 
+## 7.4.200
+
+### Patch Changes
+
+- ctx-core: ^7.2.19 -> ^7.2.20
+
 ## 7.4.199
 
 ### Patch Changes
