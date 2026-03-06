@@ -1,5 +1,13 @@
 # @ctx-core/child_process
 
+## 7.4.214
+
+### Patch Changes
+
+- chore: migrate scripts from pnpm to bun
+- Updated dependencies
+  - ctx-core@7.2.34
+
 ## 7.4.213
 
 ### Patch Changes
